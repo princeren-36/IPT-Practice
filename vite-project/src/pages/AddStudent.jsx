@@ -120,7 +120,7 @@ function AddStudent() {
         </Box>
       </Modal>
     </div>
-    </div>
+    </>
   );
 }
 
