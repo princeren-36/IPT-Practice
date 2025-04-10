@@ -1,0 +1,74 @@
+.student {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding: 20px;
+    width: 15%;
+}
+
+.student h1 {
+    width: 400px;
+}
+
+.table {
+    min-width: 500px;
+}
+
+.student button {
+    width: 60%;
+}
+
+.modal-box {
+    background-color: white;
+    padding: 20px;
+    width: 20%;
+    margin: auto;
+    margin-top: 5%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.studentInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    height: auto;
+    width: 75%;
+    margin-left: 400px;
+}
+
+.tablecon{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.containerr {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.containerr h2{
+    margin-left: 50px;
+}
+.table button {
+    margin-right: 10px;
+}
+
+.modal-box h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.modal-box button {
+    width: 100%;
+}
+
+.add{
+    display: flex;
+    align-self: flex-end;
+    margin-right: 50px;
+    padding: 0 20px 20px 0;
+}

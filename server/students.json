@@ -1,0 +1,42 @@
+[
+  {
+    "idNo": "12",
+    "firstName": "John",
+    "lastName": "Doe",
+    "middleName": "Smith",
+    "course": "Computer Science",
+    "year": "2023"
+  },
+  {
+    "idNo": "2131",
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "middleName": "Doe",
+    "course": "Software Engineering",
+    "year": "2024"
+  },
+  {
+    "idNo": "21312",
+    "firstName": "Alan",
+    "lastName": "Walker",
+    "middleName": "Smith",
+    "course": "Data Science",
+    "year": "2025"
+  },
+  {
+    "idNo": "3",
+    "firstName": "aei em",
+    "lastName": "lachica",
+    "middleName": "cacal",
+    "course": "archi",
+    "year": "2"
+  },
+  {
+    "idNo": "123",
+    "firstName": "",
+    "lastName": "",
+    "middleName": "",
+    "course": "",
+    "year": ""
+  }
+]
