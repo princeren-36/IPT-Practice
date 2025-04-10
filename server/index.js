@@ -4,56 +4,43 @@ const cors = require("cors");
 
 const app = express();
 const port = 1337;
-const studentsFile = "students.json";  // Store students data in this file
+const studentsFile = "students.json";
 
-// Middleware
 app.use(cors());
 app.use(express.json());
 
-// Read data from file
 const readData = (file) => {
     try {
-        if (!fs.existsSync(file)) return [];  // Return empty array if the file doesn't exist
+        if (!fs.existsSync(file)) return []; 
         const data = fs.readFileSync(file);
-        return JSON.parse(data);  // Parse JSON data from the file
+        return JSON.parse(data);
     } catch (error) {
         console.error(`Error reading ${file}:`, error);
         return [];
     }
 };
 
-// Write data to file
 const writeData = (file, data) => {
     try {
-        fs.writeFileSync(file, JSON.stringify(data, null, 2));  // Write data back to the file in a readable format
+        fs.writeFileSync(file, JSON.stringify(data, null, 2)); 
     } catch (error) {
         console.error(`Error writing to ${file}:`, error);
     }
 };
 
-// ========================
-// Add Student API
-// ========================
 app.post("/addstudents", (req, res) => {
-    const newStudent = req.body;  // Get new student data from request body
-    let students = readData(studentsFile);  // Read existing students data
+    const newStudent = req.body; 
+    let students = readData(studentsFile); 
 
-    // Add new student to the list
     students.push(newStudent);
-    writeData(studentsFile, students);  // Save the updated list to the file
+    writeData(studentsFile, students);
 
-    res.status(201).json(newStudent);  // Respond with the new student data
+    res.status(201).json(newStudent); 
     console.log("New student added:", newStudent);
 });
 
-// ========================
-// Default Route
-// ========================
-app.get("/", (req, res) => {
-    res.send("Hello, World!");
-});
 app.get("/fetchstudents", (req, res) => {
-    res.json(readData(studentsFile));  // This sends the student data back
+    res.json(readData(studentsFile));
 });
 
 // Start the server

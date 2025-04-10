@@ -48,7 +48,7 @@ function AddStudent() {
   };
 
   return (
-    <div>
+    <>
     <Sidebar></Sidebar>
     <div>
       <Button
